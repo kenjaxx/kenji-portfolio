@@ -396,21 +396,21 @@ export default function Portfolio() {
 
         {/* ABOUT PAGE */}
         <Page id="About" index={0}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "72px", alignItems: "center" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: "56px", alignItems: "center" }}>
             <div>
               <div className="section-label">01 — About Me</div>
               <h2 style={{ fontFamily: font, fontSize: "clamp(30px,4vw,46px)", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "24px", fontWeight: 400 }}>
                 Crafting digital<br />experiences with intent.
               </h2>
-              <p style={{ fontSize: "15px", lineHeight: 1.85, color: "rgba(255,255,255,0.8)", fontWeight: 300, marginBottom: "16px" }}>
+              <p style={{ fontSize: "16px", lineHeight: 1.9, color: "rgba(255,255,255,0.8)", fontWeight: 300, marginBottom: "16px" }}>
                 I'm a full-stack developer based in Cebu with a strong eye for design and a love for performance-optimized code. I bridge the gap between engineering and UX.
               </p>
-              <p style={{ fontSize: "15px", lineHeight: 1.85, color: "rgba(255,255,255,0.8)", fontWeight: 300 }}>
+              <p style={{ fontSize: "16px", lineHeight: 1.9, color: "rgba(255,255,255,0.8)", fontWeight: 300 }}>
                 When I'm not coding, I'm exploring UI patterns, contributing to open source, or learning a new language.
               </p>
             </div>
             {/* BLENDED PHOTO */}
-            <div style={{ position: "relative", aspectRatio: "3/4", maxHeight: "400px" }}>
+            <div style={{ position: "relative", aspectRatio: "4/5", maxHeight: "520px" }}>
               <img src="/cute.jpg" alt="Ehrica Jynne"
                 style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", borderRadius: "16px", display: "block" }}
               />
@@ -426,7 +426,7 @@ export default function Portfolio() {
         <div id="Skills" ref={skillsRef} style={{ minHeight: "100vh", scrollSnapAlign: "start", scrollSnapStop: "always", display: "flex", alignItems: "center", position: "relative", zIndex: 2 }}>
           <div style={{ maxWidth: "960px", margin: "0 auto", padding: "80px 40px", width: "100%" }}>
             <div className="section-label">02 — Skills</div>
-            <h2 style={{ fontFamily: font, fontSize: "clamp(30px,4vw,46px)", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "40px", fontWeight: 400 }}>What I work with.</h2>
+            <h2 style={{ fontFamily: font, fontSize: "clamp(36px,4.5vw,54px)", lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "40px", fontWeight: 400 }}>What I work with.</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>
               {SKILLS.map(({ name, level, color }, i) => (
                 <SkillCard key={name} name={name} level={level} color={color} delay={i * 80} visible={skillsVisible} />
@@ -488,7 +488,7 @@ export default function Portfolio() {
                 <MagneticButton className="submit-btn" style={{ alignSelf: "flex-start" }}>Send Message</MagneticButton>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "28px", paddingTop: "4px" }}>
-                {[["Email", "ehrica@email.com"], ["LinkedIn", "linkedin.com/in/ehricajynne"], ["GitHub", "github.com/kenjaxx"]].map(([label, val]) => (
+                {[["Email", "ica.acads@email.com"], ["LinkedIn", "linkedin.com/in/ehricajynne"], ["GitHub", "github.com/kenjaxx"]].map(([label, val]) => (
                   <div key={label}>
                     <div style={{ fontFamily: mono, fontSize: "11px", color: "rgba(255,255,255,0.5)", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "6px" }}>{label}</div>
                     <div style={{ fontSize: "15px", fontWeight: 500, color: "#fff" }}>{val}</div>
